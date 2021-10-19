@@ -11,15 +11,18 @@ Dichiariamo chi ha vinto. */
 - if
  */
 
-const chooseUserNumber = prompt("Scegli un numero da 1 a 5  [dispari/pari]");
+const chooseUserNumber = parseInt(
+  prompt("Scegli un numero da 1 a 5  [dispari/pari]")
+);
 console.log(chooseUserNumber);
 
-function numeroRandomPC(n1, n2, n3, n4, n5) {
+function numeroRandomPC() {
   var risultato = Math.floor(Math.random() * 6);
+  console.log(risultato);
   return risultato;
 }
 
-const generatePc = (1, 2, 3, 4, 5);
+const generatePc = numeroRandomPC();
 console.log(generatePc);
 
 // somma
@@ -33,4 +36,3 @@ function addizione(n1, n2) {
 
 var somma = addizione(chooseUserNumber, generatePc);
 console.log(somma);
-console.log(risultato);
