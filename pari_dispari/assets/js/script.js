@@ -39,24 +39,21 @@ console.log(somma);
 
 // stabilire se la somma è pari o dispari
 
-/* function verficaSomma() {
-  let risultato = somma % 2;
-  if (somma == 0) {
-    console.log("è pari");
-    risultato = "è pari";
+function controlSomma(somma) {
+  if (somma % 2 == 0) {
+    return "pari";
   } else {
-    console.log("è dispari");
-    risultato = "è dispari";
+    return "dispari";
   }
+}
 
-  return risultato;
-} */
+console.log(controlSomma(somma));
 
-if (somma % 2 == 0) {
+/* if (somma % 2 == 0) {
   console.log("è pari");
 } else {
   console.log("dispari");
-}
+} */
 
 // Dichiarare il vincitore
 
