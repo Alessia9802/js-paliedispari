@@ -18,7 +18,7 @@ console.log(chooseUserNumber);
 
 function numeroRandomPC() {
   var risultato = Math.floor(Math.random() * 6);
-  console.log(risultato);
+  /* console.log(risultato); */
   return risultato;
 }
 
@@ -36,3 +36,34 @@ function addizione(n1, n2) {
 
 var somma = addizione(chooseUserNumber, generatePc);
 console.log(somma);
+
+// stabilire se la somma è pari o dispari
+
+/* function verficaSomma() {
+  let risultato = somma % 2;
+  if (somma == 0) {
+    console.log("è pari");
+    risultato = "è pari";
+  } else {
+    console.log("è dispari");
+    risultato = "è dispari";
+  }
+
+  return risultato;
+} */
+
+if (somma % 2 == 0) {
+  console.log("è pari");
+} else {
+  console.log("dispari");
+}
+
+// Dichiarare il vincitore
+
+if (chooseUserNumber > generatePc) {
+  console.log("User ha vinto");
+} else if (chooseUserNumber < generatePc) {
+  console.log("Pc vince");
+} else {
+  console.log("riprova");
+}
