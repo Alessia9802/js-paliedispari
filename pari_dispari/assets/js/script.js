@@ -41,9 +41,9 @@ console.log(somma);
 
 function controlSomma(somma) {
   if (somma % 2 == 0) {
-    return "pari";
+    return "la somma è pari";
   } else {
-    return "dispari";
+    return "la somma è dispari";
   }
 }
 
